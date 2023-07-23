@@ -1,0 +1,25 @@
+{
+  "name": "manifold-saas",
+  "version": "1.0.0",
+  "description": "A software as service project that involves the generative ai llm models for almost any type of general or organizational usecases",
+  "main": "main.js",
+  "scripts": {
+    "start:dev": "cd manifold-app; npm start",
+    "build": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "angular",
+    "saas",
+    "genai",
+    "generative",
+    "ai",
+    "nestjs",
+    "typescript",
+    "llm",
+    "huggingface"
+  ],
+  "author": "Sounish Nath (flock.sinasini@gmail.com)",
+  "license": "ISC"
+}
