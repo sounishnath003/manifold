@@ -10,6 +10,11 @@ const routes: Routes = [
         (m) => m.DashboardModule
       ),
   },
+  {
+    path: 'services',
+    loadChildren: () =>
+      import('./pages/services/services.module').then((m) => m.ServicesModule),
+  },
 ];
 
 @NgModule({
