@@ -5,6 +5,11 @@ import { GeneralAvailableServices } from '../constants/services';
   providedIn: 'root',
 })
 export class AppstateService {
-  public generalAvailableServices = GeneralAvailableServices;
+  private _generalAvailableServices = GeneralAvailableServices;
+
+  get generalAvailableServices() {
+    return this._generalAvailableServices;
+  }
+
   constructor() {}
 }

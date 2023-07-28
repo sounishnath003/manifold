@@ -1,27 +1,27 @@
 export const GeneralAvailableServices = [
   {
-    link: '/',
+    link: '/dashboard',
     title: 'Home',
-    icon: 'home',
+    icon: '/assets/home.svg',
   },
   {
     link: '/dashboard/conversational',
     title: 'Conversational AI',
-    icon: 'home',
+    icon: '/assets/chat.svg',
   },
   {
     link: '/dashboard/image-generation',
     title: 'Image Generation AI',
-    icon: 'home',
+    icon: '/assets/photo.svg',
   },
   {
     link: '/dashboard/video-generation',
     title: 'Video Generation AI',
-    icon: 'home',
+    icon: '/assets/video.svg',
   },
   {
     link: '/dashboard/music-generation',
     title: 'Music Generation AI',
-    icon: 'home',
+    icon: '/assets/music.svg',
   },
 ];
