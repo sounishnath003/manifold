@@ -8,6 +8,7 @@
 
 
 *, :host, :root {
+    --tw-text-opacity: 1;
     font-family: 'Product Sans', 'Nunito', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

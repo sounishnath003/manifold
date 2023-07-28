@@ -4,8 +4,12 @@
   "description": "A software as service project that involves the generative ai llm models for almost any type of general or organizational usecases",
   "main": "main.js",
   "scripts": {
-    "start:dev": "cd manifold-app; npm start",
-    "build": "",
+    "start:dev": "concurrently -k -m=2 \"npm:start:backend:dev\" \"npm:start:frontend:dev\" ",
+    "build": "concurrently -k -m=2 \"npm:backend:build\" \"npm:start:frontapp:build\"",
+    "start:frontend:dev": "cd manifold-app; npm start",
+    "start:frontend:build": "cd manifold-app; npm run buld",
+    "start:backend:dev": "cd manifold-backend; npm run start:dev",
+    "start:backend:build": "cd manifold-backend; npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,5 +25,8 @@
     "huggingface"
   ],
   "author": "Sounish Nath (flock.sinasini@gmail.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
 }
