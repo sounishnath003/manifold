@@ -1,0 +1,21 @@
+version: "4"
+services:
+  manifold-backend:
+    build:
+      context: ./manifold-backend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./manifold-backend:/app
+      
+  manifold-app:
+    build:
+      context: ./manifold-app
+      dockerfile: Dockerfile
+    depends_on:
+      - manifold-backend
+    ports:
+      - 4200:4200
+    volumes:
+      - ./manifold-app:/app
