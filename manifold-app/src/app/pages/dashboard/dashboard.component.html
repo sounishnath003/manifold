@@ -2,23 +2,34 @@
   <div class="text-2xl text-primary">Dashboard KPIs</div>
   <div>
     <div class="stats shadow">
-      <div class="stat">
-        <div class="stat-figure text-primary">
-          <img class="w-8" src="/assets/view.svg" alt="" />
-        </div>
-        <div class="stat-title">Total Page Views</div>
-        <div class="stat-value">89,400</div>
-        <div class="stat-desc">21% more than last month</div>
-      </div>
+      <app-statscard
+        image="/assets/view.svg"
+        title="Total Page Views"
+        value="99.4K"
+        description="21% more than last month"
+      ></app-statscard>
+      <app-statscard
+        image="/assets/like.svg"
+        title="Your Feedback"
+        value="305"
+        description="11.3% more than last month"
+      ></app-statscard>
 
-      <div class="stat">
-        <div class="stat-figure text-primary">
-          <img class="w-8" src="/assets/like.svg" alt="" />
-        </div>
-        <div class="stat-title">Total Likes</div>
-        <div class="stat-value text-primary">25.6K</div>
-        <div class="stat-desc">21% more than last month</div>
-      </div>
+      <app-statscard
+        image="/assets/info.svg"
+        value="65%"
+        title="Quota used"
+        description="52/80 free calls left."
+        stattype="warn"
+      ></app-statscard>
+
+      <app-statscard
+        image="/assets/chat.svg"
+        value="65%"
+        title="Conversation AI"
+        [description]="'32% &downarrow; less than last month'"
+        stattype="info"
+      ></app-statscard>
 
       <div class="stat">
         <div class="stat-figure text-secondary">
@@ -28,10 +39,18 @@
             </div>
           </div>
         </div>
-        <div class="stat-value">86%</div>
+        <div class="stat-value">86</div>
         <div class="stat-title">Tasks done</div>
         <div class="stat-desc text-secondary">31 tasks remaining</div>
       </div>
+    </div>
+  </div>
+  <div class="my-5">
+    <div class="text-3xl text-primary">Your Subscriptions</div>
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-6 my-5">
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
     </div>
   </div>
 </div>

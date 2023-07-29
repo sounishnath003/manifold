@@ -1,0 +1,10 @@
+<div class="stat hover:bg-gray-50 cursor-pointer transition-colors">
+  <div class="stat-figure text-primary">
+    <img class="w-8" [src]="image" alt="stat-icon" />
+  </div>
+  <div class="stat-title">{{ title }}</div>
+  <div class="stat-value text-primary-focus">{{ value }}</div>
+  <div class="stat-desc text-sm" [ngClass]="getDynamicClassConfig()">
+    {{ description }}
+  </div>
+</div>

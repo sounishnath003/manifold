@@ -1,0 +1,46 @@
+<div class="flex flex-col gap-4">
+  <div class="text-center">
+    <div class="text-xl m-auto font-semibold lg:text-3xl text-primary">
+      &bull; Login into your account &bull;
+    </div>
+    <div class="p m-auto text-content text-sm">
+      <p>
+        <b>Manifold</b> is an easy software as service solution to all your AI
+        needs!.
+      </p>
+    </div>
+  </div>
+  <div class="form-control">
+    <label for="username" class="label label-text">
+      <span class="label-text">Username</span>
+    </label>
+    <input
+      id="username"
+      type="text"
+      required="true"
+      placeholder="sounishnath003"
+      class="input input-bordered"
+    />
+  </div>
+  <div class="form-control">
+    <label for="password" class="label label-text">
+      <span class="label-text">Password</span>
+    </label>
+    <input
+      id="password"
+      type="password"
+      required="true"
+      placeholder="password"
+      class="input input-bordered"
+    />
+  </div>
+  <div class="form-control">
+    <div class="btn btn-primary" routerLink="/dashboard">login</div>
+  </div>
+  <div class="text-center">
+    <span class="text-error">Do not have an account?. </span>
+    <span class="link text-secondary" routerLink="/auth/signup"
+      >Let's Signup</span
+    >
+  </div>
+</div>
