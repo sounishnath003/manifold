@@ -1,15 +1,19 @@
 version: "4"
 services:
   manifold-backend:
+    environment:
+      - NODE_ENV=development
     build:
       context: ./manifold-backend
       dockerfile: Dockerfile
     ports:
       - 3000:3000
     volumes:
-      - ./manifold-backend:/app
-      
+      - ./manifold-backend:/src
+
   manifold-app:
+    environment:
+      - NODE_ENV=development
     build:
       context: ./manifold-app
       dockerfile: Dockerfile
@@ -18,4 +22,4 @@ services:
     ports:
       - 4200:4200
     volumes:
-      - ./manifold-app:/app
+      - ./manifold-app:/src
