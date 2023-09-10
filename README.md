@@ -40,6 +40,16 @@ Proven models of Huggingfaces, Google, OpenAI, LLAMA, Salesforce etc models will
 
 All the intrested developers out there, are very much heartily welcome to contribute and make the project successful ones.
 
+## Project setup
+Open your terminal, and execute the following scripts.
+
+> Make sure your have docker installed on your machine to maintain the same project development environment setup.
+
+```bash
+git clone https://github.com/sounishnath003/manifold.git
+docker-compose up --rebuild
+```
+
 ## Authors
 
 - [Sounish Nath](flock.sinasini@gmail.com) - software engineer loves to solve and builds projects that helps community to use and learn together. Feel free to connect and discuss - 

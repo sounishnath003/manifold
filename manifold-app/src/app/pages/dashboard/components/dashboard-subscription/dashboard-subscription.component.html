@@ -1,0 +1,31 @@
+<div class="my-5">
+  <div class="text-3xl my-5 text-primary">⌛️ Recent works</div>
+  <div class="grid grid-cols-4 gap-5">
+    <div
+      class="card card-compact"
+      *ngFor="
+        let item of [
+          'Conversation AI',
+          'Imagica AI',
+          'Music Generation AI',
+          'Conversation AI',
+          'Imagica AI',
+          'Music Generation AI'
+        ]
+      "
+    >
+      <div
+        class="card-body"
+        [routerLink]="['/services/conversational']"
+        routerLinkActive="router-link-active"
+      >
+        <div class="card-title text-primary">{{ item }}</div>
+        <div class="text-base text-gray-700">We are currently at capacity.</div>
+        <div class="card-actions justify-end">
+          <button class="btn btn-ghost">Back</button>
+          <button class="btn">Let's go &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
